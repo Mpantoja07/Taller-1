@@ -93,12 +93,13 @@ pagarán a $25 por hora. Ejecute su código para calcular el salario con 36 hora
  */
 $valorHora = 20000;
 $valorHoraExtra= 25000;
-$horasTrabajadas = 36;
+$horasTrabajadas = 41;
+$horasExtras = $horasTrabajadas-40;
 
 if($horasTrabajadas <= 40){
-  echo("El salario del trabajador es: ".($valorHora*$horasTrabajadas));
+  echo("El salario del trabajador es: ".($valorHora * $horasTrabajadas));
 } else if($horasTrabajadas > 40){
-  echo("El salario del trabajador es; ".($valorHoraExtra*$horasTrabajadas));
+  echo("El salario del trabajador es; ".($valorHora * 40 + $horasExtras*$valorHoraExtra));
 }
 echo("<br><br>");
 
